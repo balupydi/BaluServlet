@@ -4,4 +4,13 @@
   <artifactId>ServletPractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+  <dependency>
+  <groupId>ServletPractice</groupId>
+  <artifactId>ServletPractice</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/java/servlet-api.jar</systemPath>
+</dependency>
+  
 </project>

@@ -5,12 +5,26 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
-  <dependency>
-  <groupId>ServletPractice</groupId>
-  <artifactId>ServletPractice</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-    <scope>system</scope>
-    <systemPath>${project.basedir}/src/main/java/servlet-api.jar</systemPath>
-</dependency>
-  
+   <build>
+    <plugins>
+      <!-- any other plugins -->
+      <plugin>
+        <artifactId>ServletPractice</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>${project.basedir}/src/main/java/servlet-api.jar</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+   
 </project>

@@ -13,7 +13,9 @@
         <scope>provided</scope>
 </dependency>
    </dependencies>
-          <plugin>
+<build>
+<plugins>    
+    <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
             <version>2.5</version>
@@ -21,4 +23,6 @@
                 <webXml>WebContent\WEB-INF\web.xml</webXml>
             </configuration>
         </plugin>
+</build>
+</plugins>
 </project>

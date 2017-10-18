@@ -26,6 +26,7 @@ pipeline {
                 node('master') {
                     echo "in master server"
                 }
+            }
         }
     }
 }

@@ -7,11 +7,8 @@ pipeline {
             }
         }
         stage('Build'){
-            build job: 'HelloWorld'
-        }
-        stage('NodeTest'){
-            node('linux_test'){
-                sh 'hostname'
+            steps{
+                build job: 'HelloWorld'
             }
         }
        stage('install'){

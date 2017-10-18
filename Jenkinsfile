@@ -1,4 +1,5 @@
-pipeline {
+pipeline{
+	agent any
 	node('master'){
 		stages{
 			stage('compile'){

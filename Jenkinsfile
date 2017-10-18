@@ -17,16 +17,18 @@ pipeline {
            }
        }
        stage('node') {
-            parallel Slave: {
-                node('linux_test') {
-                    echo "in slave server"
+           steps{
+                parallel Slave: {
+                    node('linux_test') {
+                        echo "in slave server"
+                    }
+                },
+                Master: {
+                    node('master') {
+                        echo "in master server"
+                    }
                 }
-             },
-            Master: {
-                node('master') {
-                    echo "in master server"
-                }
-            }
+           }
         }
     }
 }

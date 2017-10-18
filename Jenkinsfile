@@ -1,6 +1,6 @@
 pipeline 
 {
-	node 'master'
+	node('master')
 	{
 		stages 
 		{

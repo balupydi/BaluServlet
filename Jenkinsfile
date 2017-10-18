@@ -1,14 +1,10 @@
-pipeline{
-	agent any
-	
-	node 'master' {
-		checkout scm
-		stages{
-			stage('compile'){
-				steps{
-					sh 'mvn clean install'
-				}
-			}
-		}
-	}
+pipeline {
+    agent any
+    stages { 
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
 }

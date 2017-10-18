@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	
-	node('master'){
+	node 'master' {
 		checkout scm
 		stages{
 			stage('compile'){

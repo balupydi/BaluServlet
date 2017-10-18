@@ -10,7 +10,7 @@ pipeline {
             build job: 'HelloWorld'
         }
         stage('NodeTest'){
-            node('linuxtest'){
+            node('linux_test'){
                 sh 'hostname'
             }
         }

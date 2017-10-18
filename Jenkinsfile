@@ -1,14 +1,17 @@
 pipeline {
     agent any
     stages { 
-        stage('Example') {
+        stage('Test') {
             steps {
                 echo 'Hello World'
             }
         }
-       stage('compile'){
+        stage('Build'){
+            build job: 'HelloWorld'
+        }
+       stage('install'){
            steps{     
-           sh 'mvn -version'
+           sh 'mvn -install'
            }
        }
     }

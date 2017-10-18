@@ -1,12 +1,4 @@
 pipeline {
-    agent any
-    stages { 
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
     node {
     stage('Example') {
         if (env.BRANCH_NAME == 'master') {

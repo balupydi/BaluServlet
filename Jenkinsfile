@@ -5,9 +5,11 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
-            stage('compile'){
-                sh 'maven -version'
-            }
         }
+       stage('compile'){
+           steps{     
+           sh 'maven -version'
+           }
+       }
     }
 }

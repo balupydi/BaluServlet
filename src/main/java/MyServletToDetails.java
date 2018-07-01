@@ -12,7 +12,7 @@ public class MyServletToDetails extends HttpServlet
    out.println("<head><title>Login Form</title></head>");
    out.println("<body background=\"servlet1.jpg\">");
    out.println("<div align=\"center\">");
-   out.println("<h1>Welcome to Pydi App</h1>");
+   out.println("<h1>Welcome to Balu Pydi App</h1>");
    out.println("<form name=\"loginForm\" action=\"MyServletToRD1\" method=\"get\">");
 
    out.println("<table>");
